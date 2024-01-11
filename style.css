@@ -1,0 +1,81 @@
+@font-face {
+    font-family: space-odyssey;
+    src: url(./font/SpaceOdysseyDEMO.otf);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(12, 177, 122); */
+    background-image: url(marina-vitale-t809JJ6r9KA-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: space-odyssey,sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+/* img{
+    width: 97vw;
+    height: 97vh;
+} */
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 98vh;
+    width: 37vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    backdrop-filter: blur(30px);
+    border-radius: 3px;
+    position: relative;
+    left: 600px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"]{
+    background-color: transparent;
+    outline: none;
+    border-radius: 3px;
+    border-bottom: 1px solid #d6d9dc;
+    border-top:1px solid transparent ;
+    border-left: 1px solid transparent;
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: space-odyssey,sans-serif;
+    /* border-color: transparent; */
+    
+
+}
+
+.form-column2{
+    margin-left: 50px;
+}
+
+.form-column1{
+    padding-left: 250px;
+}
+
+.form-column2,
+.form-column1{
+    height: 260px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+}
