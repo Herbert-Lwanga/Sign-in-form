@@ -7,30 +7,51 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(marina-vitale-t809JJ6r9KA-unsplash.jpg); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
     font-family: space-odyssey,sans-serif;
     font-size: large;
-    font-weight: bolder;
+    height: 96vh;
+    background:  #A24B61;
+}
+
+.left,.right{
+    height: 90%;
+    width: 45%;
+    border-radius: 6px;
+}
+
+.left{
+    background-color: #63d5c3;
+
+}
+
+.form-row-1,
+.form-row-2,
+.form-row-3,
+.form-row-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.right{
+    background-color: #3b3e52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 form{
-    color: white;
+    color: #d2efeb;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     box-sizing: border-box;
     align-items: center;
-    height: 98vh;
-    width: 37vw;
-    padding-left: 20px;
-    padding-right: 20px;
-    backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.212);
-    border-radius: 6px;
-    position: relative;
-    left: 600px;
+  
 }
 
 .form-row{
@@ -46,46 +67,34 @@ input[type="tel"]{
     background-color: transparent;
     outline: none;
     border-radius: 3px;
-    border-right: 2px solid #d6d9dc;
-    border-bottom: 2px solid #d6d9dc;
-    border-top:2px solid transparent ;
-    border-left: 2px solid transparent;
-    color: #ffffff;
-    margin-top: 10px;
-    font-family: space-odyssey,sans-serif;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #d2efeb;
+    border-top:1px solid transparent ;
+    border-left: 1px solid transparent;
+  
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="tel"],
-button[type="submit"]{
-    width: 150px;
+input[type="tel"]{
+    width: 80%;
 }
 
 
-.form-column2{
-    margin-left: 20px;
-}
 
-.form-column1{
-    padding-left: 250px;
-}
-
-.form-column2,
-.form-column1{
-    height: 260px;
-}
 
 button[type="submit"] {
     margin-top: 20px;
-    background-color: rgb(174 134 106);
-    color: #ffffff;
+    background-color: #53c5b9;
+    color: #d2efeb;
     border: transparent;
-    border-radius: 3px;
+    border-radius: 10px;
     font-family: space-odyssey,sans-serif;
     font-size: large;
-    font-weight: bolder;
+    width: 60%;
+    height: 30px;
+    
    
 }
 
@@ -95,11 +104,6 @@ input[type="tel"]:invalid{
     
 }
 
-input[type="email"]:valid,
-input[type="tel"]:valid{
-    border:2px solid rgb(78, 228, 128) ;
-    
-}
 
 
 input[type="text"]:focus,
@@ -107,6 +111,10 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 button[type="submit"]:focus{
-    border: 2px solid #8fc0f0;
+    border: 2px solid #53c5b9;
 
+}
+p{
+    color: #d2efeb;
+    align-self: center;
 }
