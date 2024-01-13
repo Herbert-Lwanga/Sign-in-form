@@ -44,12 +44,12 @@
             <div class="form-row-3">
                 <div class="form-row">
                     <label for="initial-password">PASSWORD</label>
-                    <input type="password" name="initial-password" id="initial-password">
+                    <input type="password" name="initial-password" id="initial-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                 </div>
                 
                 <div class="form-row">
                     <label for="confirmation-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmation-password" id="confirmation-password" >
+                    <input type="password" name="confirmation-password" id="confirmation-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" >
                 </div>
             </div>
             <div class="form-row-4">

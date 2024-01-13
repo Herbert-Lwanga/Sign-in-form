@@ -71,6 +71,7 @@ input[type="tel"]{
     border-bottom: 1px solid #d2efeb;
     border-top:1px solid transparent ;
     border-left: 1px solid transparent;
+    color: #d2efeb;
   
 }
 
@@ -100,7 +101,7 @@ button[type="submit"] {
 
 input[type="email"]:invalid,
 input[type="tel"]:invalid{
-    border:2px solid #e44e4e ;
+    border:1px solid #a24b61 ;
     
 }
 
@@ -111,7 +112,7 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 button[type="submit"]:focus{
-    border: 2px solid #53c5b9;
+    border: 1px solid #53c5b9;
 
 }
 p{
