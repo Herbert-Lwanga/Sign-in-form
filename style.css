@@ -7,7 +7,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(12, 177, 122); */
     background-image: url(marina-vitale-t809JJ6r9KA-unsplash.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,25 +15,20 @@ body{
     font-size: large;
     font-weight: bolder;
 }
-/* img{
-    width: 97vw;
-    height: 97vh;
-} */
 
 form{
     color: white;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    /* justify-content: space-between; */
     align-items: center;
     height: 98vh;
     width: 37vw;
     padding-left: 20px;
     padding-right: 20px;
-    
     backdrop-filter: blur(30px);
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 6px;
     position: relative;
     left: 600px;
 }
@@ -52,19 +46,26 @@ input[type="tel"]{
     background-color: transparent;
     outline: none;
     border-radius: 3px;
-    border-bottom: 1px solid #d6d9dc;
-    border-top:1px solid transparent ;
-    border-left: 1px solid transparent;
+    border-right: 2px solid #d6d9dc;
+    border-bottom: 2px solid #d6d9dc;
+    border-top:2px solid transparent ;
+    border-left: 2px solid transparent;
     color: #ffffff;
     margin-top: 10px;
     font-family: space-odyssey,sans-serif;
-    /* border-color: transparent; */
-    
-
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+button[type="submit"]{
+    width: 150px;
+}
+
+
 .form-column2{
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .form-column1{
@@ -78,4 +79,34 @@ input[type="tel"]{
 
 button[type="submit"] {
     margin-top: 20px;
+    background-color: rgb(174 134 106);
+    color: #ffffff;
+    border: transparent;
+    border-radius: 3px;
+    font-family: space-odyssey,sans-serif;
+    font-size: large;
+    font-weight: bolder;
+   
+}
+
+input[type="email"]:invalid,
+input[type="tel"]:invalid{
+    border:2px solid #e44e4e ;
+    
+}
+
+input[type="email"]:valid,
+input[type="tel"]:valid{
+    border:2px solid rgb(78, 228, 128)) ;
+    
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+button[type="submit"]:focus{
+    border: 2px solid #8fc0f0;
+
 }
