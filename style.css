@@ -5,6 +5,8 @@
 
 body{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-family: space-odyssey,sans-serif;
@@ -100,7 +102,8 @@ button[type="submit"] {
 }
 
 input[type="email"]:invalid,
-input[type="tel"]:invalid{
+input[type="tel"]:invalid,
+input[type="password"]:invalid{
     border:1px solid #a24b61 ;
     
 }
